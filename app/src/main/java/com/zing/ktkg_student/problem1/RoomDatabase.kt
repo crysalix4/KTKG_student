@@ -1,11 +1,11 @@
-package com.zing.ktkg_student
-
+package com.zing.ktkg_student.problem1
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import android.content.Context
-
+import androidx.room.TypeConverters
 @Database(entities = [Customer::class], version = 2, exportSchema = false)
+@TypeConverters(Converters::class)
 abstract class CustomerDb : RoomDatabase() {
     abstract fun customerDao(): CustomerDao
 

@@ -1,4 +1,4 @@
-package com.zing.ktkg_student
+package com.zing.ktkg_student.problem1
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Update
